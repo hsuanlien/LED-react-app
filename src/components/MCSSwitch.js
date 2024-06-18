@@ -1,10 +1,38 @@
-import React, { Component } from 'react';
+// import React from 'react';
+// import DataChannelAdapter from 'mcs-lite-ui/lib/DataChannelAdapter';
+
+// const DATACHANNEL_TYPE = 'SWITCH_CONTROL';
+
+// function MCSSwitch({ datachannelId, values, onChange }) {
+//   return (
+//     <DataChannelAdapter
+//       dataChannelProps={{
+//         id: datachannelId,
+//         type: DATACHANNEL_TYPE,
+//         values: values,
+//         format: {},
+//       }}
+//       eventHandler={({ id, values }) => {
+//         const payload = { datachannelId: id, values };
+//         onChange(payload);
+//       }}
+//     />
+//   );
+// }
+
+// export default MCSSwitch;
+
+
+
+//----------------------------------
+// import React, { Component } from 'react';
+import React from 'react';
 import DataChannelAdapter from 'mcs-lite-ui/lib/DataChannelAdapter';
 import { connectSocket } from 'mcs-lite-connect';
 // import axios from 'axios';
 const DATACHANNEL_TYPE = 'SWITCH_CONTROL';
-const DEVICE_ID = 'BynkXjCZA';
-const MCSLiteServerIP = '192.168.0.101';
+// const DEVICE_ID = 'BynkXjCZA';
+// const MCSLiteServerIP = '192.168.0.101';
 
 function MCSSwitch({ datachannelId, values, send, onChange }) {
   return (
@@ -29,6 +57,14 @@ export default connectSocket(
   ({ send }) => ({ send }),
 )(MCSSwitch);
 
+
+
+
+
+
+
+
+//-------------------------------------------------
 // class MCSSwitch extends Component {
   
 //   // 新增一個函數來處理開關狀態變化
